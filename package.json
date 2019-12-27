@@ -27,5 +27,8 @@
   "devDependencies": {
     "@types/node": "^13.1.1",
     "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "node-psr-log": "^1.1.4"
   }
 }
