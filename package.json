@@ -1,0 +1,27 @@
+{
+  "name": "tspath-fix",
+  "version": "1.0.0",
+  "description": "A resolver for @paths configuration specified in tsconfig",
+  "main": "src/tspath.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ReactiioN1337/tspath-fix.git"
+  },
+  "bin": {
+    "tspath": "./src/tspath.js"
+  },
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "path",
+    "alias",
+    "resolve",
+    "resolve path",
+    "tspath"
+  ],
+  "author": {
+    "name": "ReactiioN (Michael K.)",
+    "email": "reactiion@haze-productions.com",
+    "url": "https://reactiion.net"
+  }
+}
