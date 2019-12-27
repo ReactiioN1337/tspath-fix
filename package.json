@@ -23,5 +23,9 @@
     "name": "ReactiioN (Michael K.)",
     "email": "reactiion@haze-productions.com",
     "url": "https://reactiion.net"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.1",
+    "typescript": "^3.7.4"
   }
 }
