@@ -38,7 +38,7 @@
 	},
 	"include": [
 		"lib",
-    "src",
+    "src"
   ],
   "exclude": [
     "node_modules",
