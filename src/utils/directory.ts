@@ -32,8 +32,9 @@ export const parseDirectory = async (options: DirectoryParserInterface, director
       }, list)
     } else {
       for (const extension of extensions) {
-        if (hasExtensions(file, extension)) {
+        if (hasExtensions(filepath, extension)) {
           list.push(filepath)
+          break
         }
       }
     }
