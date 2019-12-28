@@ -4,13 +4,11 @@
  * @license   MIT
  */
 
-import { log, getTSPathPackage, getTSConfig } from './config'
+import { log, getTSPathPackage, getTSConfig }  from './config'
+import { PathAliasInterface, TSPathInterface } from './../lib/tspath.interface'
 
-interface PathAliasInterface {
-  [key: string]: string
-}
-
-class TSPath {
+class TSPath
+  implements TSPathInterface {
   private readonly _npm: any
 
   constructor() {
@@ -18,7 +16,7 @@ class TSPath {
     log.notice(`TSPath Fix version ${this._npm.version} has been loaded`)
   }
 
-  public async process() {
+  public async process(): Promise<void> {
     // todo: parse command line (--path)
     const directory = process.cwd()
 
