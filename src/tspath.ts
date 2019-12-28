@@ -20,7 +20,7 @@ class TSPath
     // todo: parse command line (--path)
     const directory = process.cwd()
 
-    const aliases = await this.getAliases(directory)
+    const aliases = await this.getTSPaths(directory)
     if (aliases == undefined) {
       return
     }
@@ -28,7 +28,7 @@ class TSPath
     console.log(aliases)
   }
 
-  private async getAliases(directory: string): Promise<PathAliasInterface | undefined> {
+  private async getTSPaths(directory: string): Promise<PathAliasInterface | undefined> {
     const config = await getTSConfig(directory)
     return config == undefined
       ? undefined
