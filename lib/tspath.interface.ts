@@ -5,7 +5,7 @@
  */
 
 export interface PathAliasInterface {
-  [key: string]: string
+  [key: string]: string[]
 }
 
 export interface TSPathInterface {
