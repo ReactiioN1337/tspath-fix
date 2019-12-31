@@ -4,6 +4,6 @@
  * @license   MIT
  */
 
-interface AliasCache {
+export interface AliasCache {
   [key: string]: string
 }
